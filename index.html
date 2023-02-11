@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
-    <title>Task Manager</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <title>Task Manager</title>
 </head>
 <body>
+  <header>
+    <h1>Task Manager</h1>
+    <form id="taskInput">
+      <input type="text" id="addTask" placeholder="input task">
+      <input type="button" id="addBtn" value="add task">
+    </form>
+  </header>
+  
+  <main>
+    <section class="taskList">
+      <h2>Tasks</h2>
+      <div id="taskDisplay">
+        <div class="task">
+          <div class="content">
+            <input type="text" class="text" value="task here"readonly>
+          </div>
+          <div class="actions">
+            <input type="button" class="edit" value="edit">
+            <input type="button" class="edit" value="delete">
+          </div>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
     
 </body>
 </html>
